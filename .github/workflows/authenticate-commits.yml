@@ -1,0 +1,18 @@
+name: pull-request
+on:
+  pull_request:
+    types: [opened, reopened, synchronize]
+jobs:
+  authenticate-commits:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+      # We appear to need write permission for both pull-requests and
+      # issues in order to post a comment to a pull request.
+      pull-requests: write
+      issues: write
+
+    steps:
+      - name: Checking if the commits can be authenticated
+        uses:  sequoia-pgp/authenticate-commits@db10763d31d14f1cbeedf6b4b62c66dd64d95b02
