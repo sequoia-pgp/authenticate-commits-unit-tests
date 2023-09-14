@@ -1,0 +1,21 @@
+version = 0
+commit_goodlist = []
+
+[authorization."alice"]
+sign_commit = true
+sign_tag = true
+sign_archive = true
+add_user = true
+retire_user = true
+audit = true
+keyring = """
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+
+mDMEZQKyFxYJKwYBBAHaRw8BAQdA5XG3Gl/OaSiEj7u4UZ7dSq0r2TWNnbi5oQTN
+3Lkttg60EzxhbGljZUBleGFtcGxlLm9yZz6IkAQTFggAOBYhBB87LHfJEqdeywNE
+w1Ib/KfdFSzSBQJlArIXAhsDBQsJCAcCBhUKCQgLAgQWAgMBAh4BAheAAAoJEFIb
+/KfdFSzSFPQBAKgNRQoQA5j7iB7aMD3GFS+YqTG493w7AOJoZvjb5e/bAQCH3GxV
+kMOQGauLgzZq8S5W0Ixa3kEluXq0YYSC6v9rCw==
+=Dxc0
+-----END PGP PUBLIC KEY BLOCK-----
+"""
